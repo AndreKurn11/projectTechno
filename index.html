@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Primary SEO -->
+    <title>Brew &amp; Co — Handcrafted Coffee &amp; Cafe in Jakarta</title>
+    <meta name="description" content="Brew &amp; Co is a cozy cafe in Jakarta serving handcrafted coffee, refreshing drinks, and wholesome food made from locally sourced ingredients. Visit us at Jl. Sudirman No. 42." />
+    <meta name="keywords" content="cafe Jakarta, kopi Jakarta, handcrafted coffee, matcha latte, cold brew, avocado toast, Brew and Co, coffee shop Sudirman" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://brewandco.id/" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="restaurant" />
+    <meta property="og:title" content="Brew &amp; Co — Handcrafted Coffee &amp; Cafe in Jakarta" />
+    <meta property="og:description" content="Discover handcrafted coffee and wholesome food in a cozy, welcoming space. Freshly roasted, locally sourced, community first." />
+    <meta property="og:url" content="https://brewandco.id/" />
+    <meta property="og:image" content="https://brewandco.id/images/hero-bg.png" />
+    <meta property="og:image:alt" content="Brew &amp; Co cafe interior with warm lighting" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:site_name" content="Brew &amp; Co" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Brew &amp; Co — Handcrafted Coffee &amp; Cafe in Jakarta" />
+    <meta name="twitter:description" content="Discover handcrafted coffee and wholesome food in a cozy, welcoming space." />
+    <meta name="twitter:image" content="https://brewandco.id/images/hero-bg.png" />
+
+    <!-- Structured Data: LocalBusiness -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CafeOrCoffeeShop",
+      "name": "Brew & Co",
+      "description": "Cozy cafe in Jakarta serving handcrafted coffee, refreshing drinks, and wholesome food made from locally sourced ingredients.",
+      "url": "https://brewandco.id",
+      "telephone": "+62812345678",
+      "email": "hello@brewandco.id",
+      "image": "https://brewandco.id/images/hero-bg.png",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Jl. Sudirman No. 42",
+        "addressLocality": "Jakarta Pusat",
+        "postalCode": "10220",
+        "addressCountry": "ID"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -6.1944491,
+        "longitude": 106.8195613
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday"],
+          "opens": "08:00",
+          "closes": "22:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Friday"],
+          "opens": "08:00",
+          "closes": "23:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Saturday"],
+          "opens": "09:00",
+          "closes": "23:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Sunday"],
+          "opens": "09:00",
+          "closes": "21:00"
+        }
+      ],
+      "servesCuisine": ["Coffee", "Cafe Food"],
+      "priceRange": "Rp 28.000 – Rp 55.000",
+      "hasMenu": "https://brewandco.id/menu.html",
+      "sameAs": [
+        "https://www.instagram.com/brewandco",
+        "https://www.facebook.com/brewandco"
+      ]
+    }
+    </script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/css/main.css" />
+  </head>
+  <body>
+
+    <!-- ===== HEADER / NAV ===== -->
+    <header id="site-header" class="fixed top-0 left-0 right-0 z-50 transition-colors duration-300">
+      <nav aria-label="Main navigation" class="max-w-7xl mx-auto px-4 flex items-center justify-between h-16">
+
+        <!-- Logo -->
+        <a href="#hero" class="font-display text-xl font-bold text-white min-h-[44px] min-w-[44px] flex items-center">
+          Brew &amp; Co
+        </a>
+
+        <!-- Desktop links -->
+        <ul class="hidden md:flex items-center gap-6 list-none m-0 p-0">
+          <li><a href="#hero"         class="text-white hover:text-accent transition-colors duration-200 min-h-[44px] min-w-[44px] flex items-center">Home</a></li>
+          <li><a href="#about"        class="text-white hover:text-accent transition-colors duration-200 min-h-[44px] min-w-[44px] flex items-center">About</a></li>
+          <li><a href="/menu.html"    class="text-white hover:text-accent transition-colors duration-200 min-h-[44px] min-w-[44px] flex items-center">Menu</a></li>
+          <li><a href="#gallery"      class="text-white hover:text-accent transition-colors duration-200 min-h-[44px] min-w-[44px] flex items-center">Gallery</a></li>
+          <li><a href="#testimonials" class="text-white hover:text-accent transition-colors duration-200 min-h-[44px] min-w-[44px] flex items-center">Reviews</a></li>
+          <li><a href="#location"     class="text-white hover:text-accent transition-colors duration-200 min-h-[44px] min-w-[44px] flex items-center">Location</a></li>
+        </ul>
+
+        <!-- Hamburger button (mobile) -->
+        <button
+          id="hamburger-btn"
+          type="button"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          class="md:hidden flex items-center justify-center min-h-[44px] min-w-[44px] text-white focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+            <line x1="3" y1="6"  x2="21" y2="6"  />
+            <line x1="3" y1="12" x2="21" y2="12" />
+            <line x1="3" y1="18" x2="21" y2="18" />
+          </svg>
+        </button>
+
+      </nav>
+
+      <!-- Mobile menu -->
+      <div
+        id="mobile-menu"
+        class="md:hidden overflow-hidden max-h-0 transition-all duration-300 bg-primary-dark"
+        aria-hidden="true"
+      >
+        <ul class="flex flex-col px-4 pb-4 gap-1 list-none m-0 p-0">
+          <li><a href="#hero"         class="text-white hover:text-accent transition-colors duration-200 min-h-[44px] flex items-center">Home</a></li>
+          <li><a href="#about"        class="text-white hover:text-accent transition-colors duration-200 min-h-[44px] flex items-center">About</a></li>
+          <li><a href="/menu.html"    class="text-white hover:text-accent transition-colors duration-200 min-h-[44px] flex items-center">Menu</a></li>
+          <li><a href="#gallery"      class="text-white hover:text-accent transition-colors duration-200 min-h-[44px] flex items-center">Gallery</a></li>
+          <li><a href="#testimonials" class="text-white hover:text-accent transition-colors duration-200 min-h-[44px] flex items-center">Reviews</a></li>
+          <li><a href="#location"     class="text-white hover:text-accent transition-colors duration-200 min-h-[44px] flex items-center">Location</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <main>
+
+      <!-- 1. Hero -->
+      <section id="hero" class="relative min-h-screen">
+        <!-- Background image -->
+        <div style="position: absolute; inset: 0; background-image: url('/images/hero-bg.png'); background-size: cover; background-position: center;"></div>
+        <!-- Overlay -->
+        <div class="absolute inset-0" style="background: var(--color-overlay);"></div>
+        <!-- Content -->
+        <div class="relative z-10 flex flex-col items-center justify-center min-h-screen text-center px-4">
+          <h1 class="font-display text-4xl md:text-6xl font-bold text-white mb-4">
+            Your Perfect Cup, Crafted With Love
+          </h1>
+          <p class="text-lg md:text-xl text-white/80 mb-8 max-w-xl">
+            Discover handcrafted coffee and wholesome food in a cozy, welcoming space.
+          </p>
+          <div class="flex flex-wrap gap-4 justify-center">
+            <a href="/menu.html" class="btn-primary">Explore Menu</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2. About -->
+      <section id="about" class="py-16 px-4">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+
+          <!-- Left column: about text -->
+          <div class="about-text">
+            <h2 class="font-display text-3xl md:text-5xl font-bold mb-6">Our Story</h2>
+            <p class="text-base leading-relaxed mb-8">
+              Brew &amp; Co was born from a simple belief: great coffee brings people together. Nestled in the heart of the neighbourhood, we've been crafting exceptional espresso drinks and wholesome, nourishing food since day one. Every bean we use is freshly roasted and sourced from local and regional farms we trust. Our kitchen turns seasonal, locally grown ingredients into meals that feel like home. Whether you're catching up with a friend, finding your morning focus, or simply taking a quiet moment for yourself, Brew &amp; Co is your place. We're more than a cafe — we're a community hub where every cup tells a story.
+            </p>
+
+            <!-- Brand values -->
+            <div class="grid grid-cols-3 gap-4">
+
+              <!-- Freshly Roasted -->
+              <div class="flex flex-col items-center text-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-primary" aria-hidden="true" focusable="false">
+                  <path d="M17 8h1a4 4 0 0 1 0 8h-1"/>
+                  <path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"/>
+                  <line x1="6" y1="2" x2="6" y2="4"/>
+                  <line x1="10" y1="2" x2="10" y2="4"/>
+                  <line x1="14" y1="2" x2="14" y2="4"/>
+                </svg>
+                <span class="text-sm font-semibold">Freshly Roasted</span>
+              </div>
+
+              <!-- Locally Sourced -->
+              <div class="flex flex-col items-center text-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-primary" aria-hidden="true" focusable="false">
+                  <path d="M12 22V12"/>
+                  <path d="M5 12C5 7 8 4 12 4s7 3 7 8"/>
+                  <path d="M5 12c0-3 2-5 7-5"/>
+                  <path d="M19 12c0-3-2-5-7-5"/>
+                </svg>
+                <span class="text-sm font-semibold">Locally Sourced</span>
+              </div>
+
+              <!-- Community First -->
+              <div class="flex flex-col items-center text-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-primary" aria-hidden="true" focusable="false">
+                  <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                </svg>
+                <span class="text-sm font-semibold">Community First</span>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Right column: cafe interior image -->
+          <div class="about-image">
+            <img
+              src="/images/about-interior.jpg"
+              alt="Cozy cafe interior with warm lighting and wooden furniture"
+              loading="lazy"
+              class="rounded-2xl w-full object-cover"
+            />
+          </div>
+
+        </div>
+      </section>
+
+      <!-- 4. Featured Products -->
+      <section id="featured" class="py-16 px-4 bg-gray-50">
+        <div class="max-w-7xl mx-auto">
+          <h2 class="font-display text-3xl md:text-5xl font-bold text-center mb-10">Featured Picks</h2>
+          <!-- Mobile: horizontal scroll; Desktop: 3-col grid -->
+          <div class="flex overflow-x-auto snap-x snap-mandatory gap-6 pb-4 md:grid md:grid-cols-3 md:overflow-visible">
+
+            <!-- coffee-001: Signature Latte -->
+            <article class="featured-card relative shrink-0 w-72 md:w-auto bg-white rounded-2xl overflow-hidden shadow-sm snap-start group">
+              <img src="/images/coffee-001.jpg" alt="Signature Latte" loading="lazy" class="w-full h-56 object-cover" />
+              <div class="overlay absolute inset-0 flex items-center justify-center">
+                <a href="/menu.html" class="cta-btn hidden items-center gap-2 bg-white text-primary-dark font-semibold px-5 py-2 rounded-full hover:bg-accent hover:text-white transition-colors duration-200">
+                  View Full Menu
+                </a>
+              </div>
+              <div class="p-4">
+                <div class="flex items-start justify-between mb-1">
+                  <h3 class="font-semibold text-lg">Signature Latte</h3>
+                  <span class="badge">Best Seller</span>
+                </div>
+                <p class="text-sm text-gray-600 mb-2">Smooth espresso with velvety steamed milk and a hint of vanilla.</p>
+                <span class="font-bold text-primary">Rp 38.000</span>
+              </div>
+            </article>
+
+            <!-- coffee-002: Cold Brew -->
+            <article class="featured-card relative shrink-0 w-72 md:w-auto bg-white rounded-2xl overflow-hidden shadow-sm snap-start group">
+              <img src="/images/coffee-002.jpg" alt="Cold Brew" loading="lazy" class="w-full h-56 object-cover" />
+              <div class="overlay absolute inset-0 flex items-center justify-center">
+                <a href="/menu.html" class="cta-btn hidden items-center gap-2 bg-white text-primary-dark font-semibold px-5 py-2 rounded-full hover:bg-accent hover:text-white transition-colors duration-200">
+                  View Full Menu
+                </a>
+              </div>
+              <div class="p-4">
+                <div class="flex items-start justify-between mb-1">
+                  <h3 class="font-semibold text-lg">Cold Brew</h3>
+                  <span class="badge">Staff Pick</span>
+                </div>
+                <p class="text-sm text-gray-600 mb-2">Slow-steeped for 18 hours, bold and refreshingly smooth.</p>
+                <span class="font-bold text-primary">Rp 42.000</span>
+              </div>
+            </article>
+
+            <!-- non-coffee-001: Matcha Latte -->
+            <article class="featured-card relative shrink-0 w-72 md:w-auto bg-white rounded-2xl overflow-hidden shadow-sm snap-start group">
+              <img src="/images/non-coffee-001.jpg" alt="Matcha Latte" loading="lazy" class="w-full h-56 object-cover" />
+              <div class="overlay absolute inset-0 flex items-center justify-center">
+                <a href="/menu.html" class="cta-btn hidden items-center gap-2 bg-white text-primary-dark font-semibold px-5 py-2 rounded-full hover:bg-accent hover:text-white transition-colors duration-200">
+                  View Full Menu
+                </a>
+              </div>
+              <div class="p-4">
+                <div class="flex items-start justify-between mb-1">
+                  <h3 class="font-semibold text-lg">Matcha Latte</h3>
+                  <span class="badge">New</span>
+                </div>
+                <p class="text-sm text-gray-600 mb-2">Ceremonial grade matcha whisked with creamy oat milk.</p>
+                <span class="font-bold text-primary">Rp 38.000</span>
+              </div>
+            </article>
+
+            <!-- non-coffee-003: Chocolate Frappe -->
+            <article class="featured-card relative shrink-0 w-72 md:w-auto bg-white rounded-2xl overflow-hidden shadow-sm snap-start group">
+              <img src="/images/non-coffee-003.jpg" alt="Chocolate Frappe" loading="lazy" class="w-full h-56 object-cover" />
+              <div class="overlay absolute inset-0 flex items-center justify-center">
+                <a href="/menu.html" class="cta-btn hidden items-center gap-2 bg-white text-primary-dark font-semibold px-5 py-2 rounded-full hover:bg-accent hover:text-white transition-colors duration-200">
+                  View Full Menu
+                </a>
+              </div>
+              <div class="p-4">
+                <div class="flex items-start justify-between mb-1">
+                  <h3 class="font-semibold text-lg">Chocolate Frappe</h3>
+                </div>
+                <p class="text-sm text-gray-600 mb-2">Rich dark chocolate blended with ice and topped with whipped cream.</p>
+                <span class="font-bold text-primary">Rp 40.000</span>
+              </div>
+            </article>
+
+            <!-- food-001: Avocado Toast -->
+            <article class="featured-card relative shrink-0 w-72 md:w-auto bg-white rounded-2xl overflow-hidden shadow-sm snap-start group">
+              <img src="/images/food-001.jpg" alt="Avocado Toast" loading="lazy" class="w-full h-56 object-cover" />
+              <div class="overlay absolute inset-0 flex items-center justify-center">
+                <a href="/menu.html" class="cta-btn hidden items-center gap-2 bg-white text-primary-dark font-semibold px-5 py-2 rounded-full hover:bg-accent hover:text-white transition-colors duration-200">
+                  View Full Menu
+                </a>
+              </div>
+              <div class="p-4">
+                <div class="flex items-start justify-between mb-1">
+                  <h3 class="font-semibold text-lg">Avocado Toast</h3>
+                  <span class="badge">Staff Pick</span>
+                </div>
+                <p class="text-sm text-gray-600 mb-2">Sourdough toast topped with smashed avocado, chili flakes, and poached egg.</p>
+                <span class="font-bold text-primary">Rp 55.000</span>
+              </div>
+            </article>
+
+          </div>
+
+          <!-- CTA: Lihat menu lengkap -->
+          <div class="flex justify-center mt-10">
+            <a href="/menu.html" class="btn-primary inline-flex items-center gap-2">
+              Lihat Menu Lengkap Kami
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                <path d="M5 12h14"/><path d="m12 5 7 7-7 7"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5. Gallery -->
+      <section id="gallery" class="py-16 px-4">
+        <div class="max-w-7xl mx-auto">
+          <h2 class="font-display text-3xl md:text-5xl font-bold text-center mb-10">Our Gallery</h2>
+          <div class="gallery-grid">
+            <img
+              src=""
+              data-src="/images/gallery-001.jpg"
+              alt="Barista carefully pouring latte art into a ceramic cup"
+              loading="lazy"
+              width="800"
+              height="1200"
+              class="gallery-img rounded-xl cursor-pointer w-full"
+            />
+            <img
+              src=""
+              data-src="/images/gallery-002.jpg"
+              alt="Sunlit cafe interior with wooden tables and hanging Edison bulbs"
+              loading="lazy"
+              width="1200"
+              height="800"
+              class="gallery-img rounded-xl cursor-pointer w-full"
+            />
+            <img
+              src=""
+              data-src="/images/gallery-003.jpg"
+              alt="Close-up of freshly roasted coffee beans in a wooden scoop"
+              loading="lazy"
+              width="900"
+              height="900"
+              class="gallery-img rounded-xl cursor-pointer w-full"
+            />
+            <img
+              src=""
+              data-src="/images/gallery-004.jpg"
+              alt="Avocado toast with poached eggs on a rustic ceramic plate"
+              loading="lazy"
+              width="1200"
+              height="900"
+              class="gallery-img rounded-xl cursor-pointer w-full"
+            />
+            <img
+              src=""
+              data-src="/images/gallery-005.jpg"
+              alt="Cozy corner booth with navy cushions and a steaming cappuccino"
+              loading="lazy"
+              width="800"
+              height="1100"
+              class="gallery-img rounded-xl cursor-pointer w-full"
+            />
+            <img
+              src=""
+              data-src="/images/gallery-006.jpg"
+              alt="Overhead flat-lay of cold brew, croissant, and open notebook on a marble table"
+              loading="lazy"
+              width="1200"
+              height="800"
+              class="gallery-img rounded-xl cursor-pointer w-full"
+            />
+            <img
+              src=""
+              data-src="/images/gallery-007.jpg"
+              alt="Espresso machine steam wand frothing milk with a golden glow"
+              loading="lazy"
+              width="750"
+              height="1050"
+              class="gallery-img rounded-xl cursor-pointer w-full"
+            />
+            <img
+              src=""
+              data-src="/images/gallery-008.jpg"
+              alt="Outdoor terrace seating surrounded by potted plants in the afternoon light"
+              loading="lazy"
+              width="1200"
+              height="675"
+              class="gallery-img rounded-xl cursor-pointer w-full"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- 6. Testimonials -->
+      <section id="testimonials" class="py-16 px-4 bg-gray-50">
+        <div class="max-w-3xl mx-auto">
+          <h2 class="font-display text-3xl md:text-5xl font-bold text-center mb-10">What People Say</h2>
+
+          <!-- Carousel container -->
+          <div class="testimonials-carousel relative">
+
+            <!-- Card 0: Sarah Mitchell (rating 5) -->
+            <div class="testimonial-card bg-white rounded-2xl p-8 shadow-sm text-center" data-index="0">
+              <img src="/images/sarah.jpg" alt="Sarah Mitchell" class="w-12 h-12 rounded-full object-cover mx-auto mb-4" />
+              <p class="font-semibold text-lg mb-1">Sarah Mitchell</p>
+              <div class="flex justify-center gap-1 mb-1" aria-label="Rating: 5 out of 5 stars">
+                <!-- star 1 filled -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="text-accent" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <!-- star 2 filled -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="text-accent" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <!-- star 3 filled -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="text-accent" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <!-- star 4 filled -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="text-accent" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <!-- star 5 filled -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="text-accent" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              </div>
+              <p class="text-gray-600 text-base leading-relaxed mt-4">"Absolutely the best coffee in the neighborhood. The signature latte has the perfect balance of espresso and milk, and the cozy atmosphere makes it my go-to spot for remote work every morning."</p>
+            </div>
+
+            <!-- Card 1: James Okafor (rating 4, no avatar) -->
+            <div class="testimonial-card bg-white rounded-2xl p-8 shadow-sm text-center" data-index="1" hidden>
+              <div class="avatar w-12 h-12 rounded-full bg-primary flex items-center justify-center text-white font-bold mx-auto mb-4">JO</div>
+              <p class="font-semibold text-lg mb-1">James Okafor</p>
+              <div class="flex justify-center gap-1 mb-1" aria-label="Rating: 4 out of 5 stars">
+                <!-- star 1 filled -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="text-accent" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <!-- star 2 filled -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="text-accent" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <!-- star 3 filled -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="text-accent" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <!-- star 4 filled -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="text-accent" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <!-- star 5 unfilled -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="text-gray-300" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              </div>
+              <p class="text-gray-600 text-base leading-relaxed mt-4">"Great vibe and friendly staff. The avocado toast is fresh and filling. Only wish they opened a bit earlier on weekdays, but overall a solid spot I keep coming back to with friends."</p>
+            </div>
+
+            <!-- Card 2: Priya Nair (rating 3) -->
+            <div class="testimonial-card bg-white rounded-2xl p-8 shadow-sm text-center" data-index="2" hidden>
+              <img src="/images/priya.jpg" alt="Priya Nair" class="w-12 h-12 rounded-full object-cover mx-auto mb-4" />
+              <p class="font-semibold text-lg mb-1">Priya Nair</p>
+              <div class="flex justify-center gap-1 mb-1" aria-label="Rating: 3 out of 5 stars">
+                <!-- star 1 filled -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="text-accent" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <!-- star 2 filled -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="text-accent" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <!-- star 3 filled -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="text-accent" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <!-- star 4 unfilled -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="text-gray-300" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <!-- star 5 unfilled -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="text-gray-300" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              </div>
+              <p class="text-gray-600 text-base leading-relaxed mt-4">"Nice place with a good menu selection. The matcha latte was decent but a little too sweet for my taste. The seating area is comfortable and the music sets a relaxing mood."</p>
+            </div>
+
+            <!-- Card 3: Daniel Reyes (rating 5, no avatar) -->
+            <div class="testimonial-card bg-white rounded-2xl p-8 shadow-sm text-center" data-index="3" hidden>
+              <div class="avatar w-12 h-12 rounded-full bg-primary flex items-center justify-center text-white font-bold mx-auto mb-4">DR</div>
+              <p class="font-semibold text-lg mb-1">Daniel Reyes</p>
+              <div class="flex justify-center gap-1 mb-1" aria-label="Rating: 5 out of 5 stars">
+                <!-- star 1 filled -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="text-accent" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <!-- star 2 filled -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="text-accent" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <!-- star 3 filled -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="text-accent" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <!-- star 4 filled -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="text-accent" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <!-- star 5 filled -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="text-accent" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              </div>
+              <p class="text-gray-600 text-base leading-relaxed mt-4">"I hosted a small team meeting here and everyone loved it. The cold brew is exceptional and the staff went out of their way to make us feel welcome. Highly recommend for any occasion."</p>
+            </div>
+
+            <!-- Card 4: Yuki Tanaka (rating 4) -->
+            <div class="testimonial-card bg-white rounded-2xl p-8 shadow-sm text-center" data-index="4" hidden>
+              <img src="/images/yuki.jpg" alt="Yuki Tanaka" class="w-12 h-12 rounded-full object-cover mx-auto mb-4" />
+              <p class="font-semibold text-lg mb-1">Yuki Tanaka</p>
+              <div class="flex justify-center gap-1 mb-1" aria-label="Rating: 4 out of 5 stars">
+                <!-- star 1 filled -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="text-accent" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <!-- star 2 filled -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="text-accent" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <!-- star 3 filled -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="text-accent" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <!-- star 4 filled -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="text-accent" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <!-- star 5 unfilled -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="text-gray-300" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              </div>
+              <p class="text-gray-600 text-base leading-relaxed mt-4">"Charming cafe with a thoughtfully curated menu. The pour-over coffee is brewed with real care and the pastries are always fresh. A little pricey but worth every penny for the quality."</p>
+            </div>
+
+            <!-- Prev arrow -->
+            <button
+              class="carousel-prev absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 w-10 h-10 rounded-full bg-white shadow-md flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-accent"
+              aria-label="Previous testimonial"
+            >‹</button>
+
+            <!-- Next arrow -->
+            <button
+              class="carousel-next absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 w-10 h-10 rounded-full bg-white shadow-md flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-accent"
+              aria-label="Next testimonial"
+            >›</button>
+
+          </div>
+
+          <!-- Dot navigation -->
+          <div class="carousel-dots flex justify-center gap-2 mt-6">
+            <button class="carousel-dot w-3 h-3 rounded-full bg-primary transition-colors duration-200" data-index="0" aria-label="Go to testimonial 1"></button>
+            <button class="carousel-dot w-3 h-3 rounded-full bg-gray-300 transition-colors duration-200" data-index="1" aria-label="Go to testimonial 2"></button>
+            <button class="carousel-dot w-3 h-3 rounded-full bg-gray-300 transition-colors duration-200" data-index="2" aria-label="Go to testimonial 3"></button>
+            <button class="carousel-dot w-3 h-3 rounded-full bg-gray-300 transition-colors duration-200" data-index="3" aria-label="Go to testimonial 4"></button>
+            <button class="carousel-dot w-3 h-3 rounded-full bg-gray-300 transition-colors duration-200" data-index="4" aria-label="Go to testimonial 5"></button>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- 7. Location & Hours -->
+      <section id="location" class="py-16 px-4">
+        <div class="max-w-7xl mx-auto">
+          <h2 class="font-display text-3xl md:text-5xl font-bold text-center mb-10">Find Us</h2>
+          <div class="grid md:grid-cols-2 gap-12 items-start">
+
+            <!-- Left: Map + Directions -->
+            <div>
+              <div class="rounded-2xl overflow-hidden mb-4">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.521260322283!2d106.8195613!3d-6.1944491!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwMTEnNDAuMCJTIDEwNsKwNDknMTAuNCJF!5e0!3m2!1sen!2sid!4v1234567890"
+                  width="100%"
+                  height="400"
+                  style="border:0;"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                  title="Brew &amp; Co location on Google Maps"
+                ></iframe>
+              </div>
+              <a href="https://maps.google.com/?q=Brew+%26+Co+Cafe+Jakarta" target="_blank" rel="noopener noreferrer" class="btn-primary inline-flex items-center gap-2">
+                Get Directions
+              </a>
+            </div>
+
+            <!-- Right: Address + Hours table -->
+            <div>
+              <div class="mb-6">
+                <h3 class="font-semibold text-lg mb-2">Address</h3>
+                <address class="not-italic text-gray-600 leading-relaxed">
+                  Jl. Sudirman No. 42<br />
+                  Jakarta Pusat, 10220<br />
+                  Indonesia
+                </address>
+                <div class="mt-3 flex flex-col gap-1">
+                  <a href="tel:+62812345678" class="text-primary hover:text-accent transition-colors duration-200">+62 812-345-678</a>
+                  <a href="mailto:hello@brewandco.id" class="text-primary hover:text-accent transition-colors duration-200">hello@brewandco.id</a>
+                </div>
+              </div>
+
+              <h3 class="font-semibold text-lg mb-3">Opening Hours</h3>
+              <table class="w-full text-sm">
+                <tbody>
+                  <tr class="hours-row" data-day="Monday"><td class="py-1 pr-4 font-medium">Monday</td><td class="py-1 text-gray-600">08:00 – 22:00</td></tr>
+                  <tr class="hours-row" data-day="Tuesday"><td class="py-1 pr-4 font-medium">Tuesday</td><td class="py-1 text-gray-600">08:00 – 22:00</td></tr>
+                  <tr class="hours-row" data-day="Wednesday"><td class="py-1 pr-4 font-medium">Wednesday</td><td class="py-1 text-gray-600">08:00 – 22:00</td></tr>
+                  <tr class="hours-row" data-day="Thursday"><td class="py-1 pr-4 font-medium">Thursday</td><td class="py-1 text-gray-600">08:00 – 22:00</td></tr>
+                  <tr class="hours-row" data-day="Friday"><td class="py-1 pr-4 font-medium">Friday</td><td class="py-1 text-gray-600">08:00 – 23:00</td></tr>
+                  <tr class="hours-row" data-day="Saturday"><td class="py-1 pr-4 font-medium">Saturday</td><td class="py-1 text-gray-600">09:00 – 23:00</td></tr>
+                  <tr class="hours-row" data-day="Sunday"><td class="py-1 pr-4 font-medium">Sunday</td><td class="py-1 text-gray-600">09:00 – 21:00</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer id="footer" class="bg-primary-dark text-white py-12 px-4">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+
+        <!-- Column 1: Brand -->
+        <div>
+          <p class="font-display text-xl font-bold mb-2">Brew &amp; Co</p>
+          <p class="text-sm opacity-75">Where every cup tells a story.</p>
+          <p class="text-xs opacity-50 mt-4">&copy; <span id="footer-year"></span> Brew &amp; Co. All rights reserved.</p>
+        </div>
+
+        <!-- Column 2: Navigation links -->
+        <nav aria-label="Footer navigation">
+          <ul class="flex flex-col gap-2 list-none m-0 p-0">
+            <li><a href="#hero"         class="text-white hover:text-accent transition-colors duration-200">Home</a></li>
+            <li><a href="#about"        class="text-white hover:text-accent transition-colors duration-200">About</a></li>
+            <li><a href="/menu.html"    class="text-white hover:text-accent transition-colors duration-200">Menu</a></li>
+            <li><a href="#gallery"      class="text-white hover:text-accent transition-colors duration-200">Gallery</a></li>
+            <li><a href="#testimonials" class="text-white hover:text-accent transition-colors duration-200">Reviews</a></li>
+            <li><a href="#location"     class="text-white hover:text-accent transition-colors duration-200">Location</a></li>
+          </ul>
+        </nav>
+
+        <!-- Column 3: Social icons -->
+        <div>
+          <p class="font-semibold mb-3">Follow Us</p>
+          <div class="flex gap-4">
+            <!-- Instagram -->
+            <a href="#" aria-label="Instagram" class="text-white hover:text-accent transition-colors duration-200 min-h-[44px] min-w-[44px] flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                <circle cx="12" cy="12" r="4"/>
+                <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/>
+              </svg>
+            </a>
+            <!-- Facebook -->
+            <a href="#" aria-label="Facebook" class="text-white hover:text-accent transition-colors duration-200 min-h-[44px] min-w-[44px] flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+              </svg>
+            </a>
+            <!-- TikTok -->
+            <a href="#" aria-label="TikTok" class="text-white hover:text-accent transition-colors duration-200 min-h-[44px] min-w-[44px] flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.76a4.85 4.85 0 0 1-1.01-.07z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+
+    <script type="module" src="/src/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+[
+  {
+    "id": "gallery-001",
+    "src": "/images/gallery-001.jpg",
+    "alt": "Barista carefully pouring latte art into a ceramic cup",
+    "width": 800,
+    "height": 1200
+  },
+  {
+    "id": "gallery-002",
+    "src": "/images/gallery-002.jpg",
+    "alt": "Sunlit cafe interior with wooden tables and hanging Edison bulbs",
+    "width": 1200,
+    "height": 800
+  },
+  {
+    "id": "gallery-003",
+    "src": "/images/gallery-003.jpg",
+    "alt": "Close-up of freshly roasted coffee beans in a wooden scoop",
+    "width": 900,
+    "height": 900
+  },
+  {
+    "id": "gallery-004",
+    "src": "/images/gallery-004.jpg",
+    "alt": "Avocado toast with poached eggs on a rustic ceramic plate",
+    "width": 1200,
+    "height": 900
+  },
+  {
+    "id": "gallery-005",
+    "src": "/images/gallery-005.jpg",
+    "alt": "Cozy corner booth with navy cushions and a steaming cappuccino",
+    "width": 800,
+    "height": 1100
+  },
+  {
+    "id": "gallery-006",
+    "src": "/images/gallery-006.jpg",
+    "alt": "Overhead flat-lay of cold brew, croissant, and open notebook on a marble table",
+    "width": 1200,
+    "height": 800
+  },
+  {
+    "id": "gallery-007",
+    "src": "/images/gallery-007.jpg",
+    "alt": "Espresso machine steam wand frothing milk with a golden glow",
+    "width": 750,
+    "height": 1050
+  },
+  {
+    "id": "gallery-008",
+    "src": "/images/gallery-008.jpg",
+    "alt": "Outdoor terrace seating surrounded by potted plants in the afternoon light",
+    "width": 1200,
+    "height": 675
+  }
+]

@@ -1,0 +1,117 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary-dark: #0A2E5E;
+  --color-primary: #1565C0;
+  --color-accent: #42A5F5;
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+}
+
+:root {
+  --color-primary-dark:       #0A2E5E;
+  --color-primary:            #1565C0;
+  --color-accent:             #42A5F5;
+  --color-white:              #FFFFFF;
+  --color-overlay:            rgba(10, 46, 94, 0.60);
+  --color-featured-overlay:   rgba(21, 101, 192, 0.20);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@layer base {
+  button:focus-visible,
+  a:focus-visible,
+  input:focus-visible,
+  select:focus-visible,
+  textarea:focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 2px;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary text-white px-8 py-3 rounded-full transition-colors duration-300 hover:bg-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2;
+  }
+
+  .btn-outline {
+    @apply border-2 border-white text-white px-8 py-3 rounded-full transition-colors duration-300 hover:bg-white hover:text-primary-dark focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2;
+  }
+
+  .menu-card {
+    transition: transform 200ms ease, box-shadow 200ms ease;
+  }
+
+  .menu-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  }
+
+  .featured-card .overlay {
+    background: var(--color-featured-overlay);
+    opacity: 0;
+    transition: opacity 250ms ease;
+  }
+
+  .featured-card:hover .overlay {
+    opacity: 1;
+  }
+
+  .featured-card:hover .cta-btn {
+    display: flex;
+  }
+
+  .badge {
+    @apply bg-accent text-white text-xs px-2 py-1 rounded-full;
+  }
+
+  .badge-sold-out {
+    @apply bg-gray-400 text-white text-xs px-2 py-1 rounded-full;
+  }
+
+  .field-error {
+    @apply border-red-500 ring-1 ring-red-500;
+  }
+
+  .success-message {
+    @apply text-center py-12 text-green-600;
+  }
+}
+
+#hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.is-sticky {
+  background-color: var(--color-primary-dark);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.gallery-grid {
+  column-count: 1;
+  column-gap: 1rem;
+}
+@media (min-width: 768px) {
+  .gallery-grid { column-count: 2; }
+}
+@media (min-width: 1024px) {
+  .gallery-grid { column-count: 3; }
+}
+.gallery-grid img {
+  break-inside: avoid;
+  margin-bottom: 1rem;
+  width: 100%;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  display: block;
+}

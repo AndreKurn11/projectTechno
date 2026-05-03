@@ -1,0 +1,35 @@
+[
+  {
+    "id": "testimonial-001",
+    "reviewerName": "Sarah Mitchell",
+    "avatar": "/images/avatars/sarah.webp",
+    "rating": 5,
+    "text": "Absolutely the best coffee in the neighborhood. The signature latte has the perfect balance of espresso and milk, and the cozy atmosphere makes it my go-to spot for remote work every morning."
+  },
+  {
+    "id": "testimonial-002",
+    "reviewerName": "James Okafor",
+    "rating": 4,
+    "text": "Great vibe and friendly staff. The avocado toast is fresh and filling. Only wish they opened a bit earlier on weekdays, but overall a solid spot I keep coming back to with friends."
+  },
+  {
+    "id": "testimonial-003",
+    "reviewerName": "Priya Nair",
+    "avatar": "/images/avatars/priya.webp",
+    "rating": 3,
+    "text": "Nice place with a good menu selection. The matcha latte was decent but a little too sweet for my taste. The seating area is comfortable and the music sets a relaxing mood."
+  },
+  {
+    "id": "testimonial-004",
+    "reviewerName": "Daniel Reyes",
+    "rating": 5,
+    "text": "I hosted a small team meeting here and everyone loved it. The cold brew is exceptional and the staff went out of their way to make us feel welcome. Highly recommend for any occasion."
+  },
+  {
+    "id": "testimonial-005",
+    "reviewerName": "Yuki Tanaka",
+    "avatar": "/images/avatars/yuki.webp",
+    "rating": 4,
+    "text": "Charming cafe with a thoughtfully curated menu. The pour-over coffee is brewed with real care and the pastries are always fresh. A little pricey but worth every penny for the quality."
+  }
+]

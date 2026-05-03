@@ -1,0 +1,106 @@
+[
+  {
+    "id": "coffee-001",
+    "category": "coffee",
+    "name": "Signature Latte",
+    "description": "Smooth espresso with velvety steamed milk and a hint of vanilla.",
+    "price": 38000,
+    "image": "/images/coffee-001.jpg",
+    "available": true,
+    "featured": true,
+    "badge": "Best Seller"
+  },
+  {
+    "id": "coffee-002",
+    "category": "coffee",
+    "name": "Cold Brew",
+    "description": "Slow-steeped for 18 hours, bold and refreshingly smooth.",
+    "price": 42000,
+    "image": "/images/coffee-002.jpg",
+    "available": true,
+    "featured": true,
+    "badge": "Staff Pick"
+  },
+  {
+    "id": "coffee-003",
+    "category": "coffee",
+    "name": "Caramel Macchiato",
+    "description": "Espresso layered with caramel drizzle and warm steamed milk.",
+    "price": 40000,
+    "image": "/images/coffee-003.jpg",
+    "available": true,
+    "featured": false
+  },
+  {
+    "id": "coffee-004",
+    "category": "coffee",
+    "name": "Espresso Tonic",
+    "description": "Double shot espresso over sparkling tonic water with citrus zest.",
+    "price": 35000,
+    "image": "/images/coffee-004.jpg",
+    "available": false,
+    "featured": false
+  },
+  {
+    "id": "non-coffee-001",
+    "category": "non-coffee",
+    "name": "Matcha Latte",
+    "description": "Ceremonial grade matcha whisked with creamy oat milk.",
+    "price": 38000,
+    "image": "/images/non-coffee-001.jpg",
+    "available": true,
+    "featured": true,
+    "badge": "New"
+  },
+  {
+    "id": "non-coffee-002",
+    "category": "non-coffee",
+    "name": "Strawberry Lemonade",
+    "description": "Fresh strawberries blended with house-squeezed lemon and sparkling water.",
+    "price": 32000,
+    "image": "/images/non-coffee-002.jpg",
+    "available": true,
+    "featured": false
+  },
+  {
+    "id": "non-coffee-003",
+    "category": "non-coffee",
+    "name": "Chocolate Frappe",
+    "description": "Rich dark chocolate blended with ice and topped with whipped cream.",
+    "price": 40000,
+    "image": "/images/non-coffee-003.jpg",
+    "available": true,
+    "featured": true
+  },
+  {
+    "id": "food-001",
+    "category": "food",
+    "name": "Avocado Toast",
+    "description": "Sourdough toast topped with smashed avocado, chili flakes, and poached egg.",
+    "price": 55000,
+    "image": "/images/food-001.jpg",
+    "available": true,
+    "featured": true,
+    "badge": "Staff Pick"
+  },
+  {
+    "id": "food-002",
+    "category": "food",
+    "name": "Banana Walnut Muffin",
+    "description": "Moist banana muffin loaded with toasted walnuts, baked fresh daily.",
+    "price": 28000,
+    "image": "/images/food-002.jpg",
+    "available": true,
+    "featured": false
+  },
+  {
+    "id": "food-003",
+    "category": "food",
+    "name": "Grilled Cheese Sandwich",
+    "description": "Three-cheese blend melted between golden buttered sourdough slices.",
+    "price": 48000,
+    "image": "/images/food-003.jpg",
+    "available": true,
+    "featured": false
+  }
+]
