@@ -239,95 +239,70 @@
       <section id="featured" class="py-16 px-4 bg-gray-50">
         <div class="max-w-7xl mx-auto">
           <h2 class="font-display text-3xl md:text-5xl font-bold text-center mb-10">Featured Picks</h2>
-          <!-- Mobile: horizontal scroll; Desktop: 3-col grid -->
-          <div class="flex overflow-x-auto snap-x snap-mandatory gap-6 pb-4 md:grid md:grid-cols-3 md:overflow-visible">
+
+          <div class="menu-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
             <!-- coffee-001: Signature Latte -->
-            <article class="featured-card relative shrink-0 w-72 md:w-auto bg-white rounded-2xl overflow-hidden shadow-sm snap-start group">
-              <img src="/images/coffee-001.jpg" alt="Signature Latte" loading="lazy" class="w-full h-56 object-cover" />
-              <div class="overlay absolute inset-0 flex items-center justify-center">
-                <a href="/menu.html" class="cta-btn hidden items-center gap-2 bg-white text-primary-dark font-semibold px-5 py-2 rounded-full hover:bg-accent hover:text-white transition-colors duration-200">
-                  View Full Menu
-                </a>
-              </div>
-              <div class="p-4">
-                <div class="flex items-start justify-between mb-1">
-                  <h3 class="font-semibold text-lg">Signature Latte</h3>
+            <article class="menu-card bg-white rounded-2xl overflow-hidden shadow-sm">
+              <img src="/images/coffee-001.jpg" alt="Signature Latte — smooth espresso with steamed milk" loading="lazy" width="600" height="400" class="w-full h-48 object-cover" />
+              <div class="card-body p-4">
+                <h3 class="font-semibold text-lg mb-1">Signature Latte</h3>
+                <p class="text-sm text-gray-600 mb-2">Smooth espresso with velvety steamed milk and a hint of vanilla.</p>
+                <div class="flex items-center justify-between">
+                  <span class="font-bold text-primary">Rp 38.000</span>
                   <span class="badge">Best Seller</span>
                 </div>
-                <p class="text-sm text-gray-600 mb-2">Smooth espresso with velvety steamed milk and a hint of vanilla.</p>
-                <span class="font-bold text-primary">Rp 38.000</span>
               </div>
             </article>
 
             <!-- coffee-002: Cold Brew -->
-            <article class="featured-card relative shrink-0 w-72 md:w-auto bg-white rounded-2xl overflow-hidden shadow-sm snap-start group">
-              <img src="/images/coffee-002.jpg" alt="Cold Brew" loading="lazy" class="w-full h-56 object-cover" />
-              <div class="overlay absolute inset-0 flex items-center justify-center">
-                <a href="/menu.html" class="cta-btn hidden items-center gap-2 bg-white text-primary-dark font-semibold px-5 py-2 rounded-full hover:bg-accent hover:text-white transition-colors duration-200">
-                  View Full Menu
-                </a>
-              </div>
-              <div class="p-4">
-                <div class="flex items-start justify-between mb-1">
-                  <h3 class="font-semibold text-lg">Cold Brew</h3>
+            <article class="menu-card bg-white rounded-2xl overflow-hidden shadow-sm">
+              <img src="/images/coffee-002.jpg" alt="Cold Brew — slow-steeped 18 hours" loading="lazy" width="600" height="400" class="w-full h-48 object-cover" />
+              <div class="card-body p-4">
+                <h3 class="font-semibold text-lg mb-1">Cold Brew</h3>
+                <p class="text-sm text-gray-600 mb-2">Slow-steeped for 18 hours, bold and refreshingly smooth.</p>
+                <div class="flex items-center justify-between">
+                  <span class="font-bold text-primary">Rp 42.000</span>
                   <span class="badge">Staff Pick</span>
                 </div>
-                <p class="text-sm text-gray-600 mb-2">Slow-steeped for 18 hours, bold and refreshingly smooth.</p>
-                <span class="font-bold text-primary">Rp 42.000</span>
               </div>
             </article>
 
             <!-- non-coffee-001: Matcha Latte -->
-            <article class="featured-card relative shrink-0 w-72 md:w-auto bg-white rounded-2xl overflow-hidden shadow-sm snap-start group">
-              <img src="/images/non-coffee-001.jpg" alt="Matcha Latte" loading="lazy" class="w-full h-56 object-cover" />
-              <div class="overlay absolute inset-0 flex items-center justify-center">
-                <a href="/menu.html" class="cta-btn hidden items-center gap-2 bg-white text-primary-dark font-semibold px-5 py-2 rounded-full hover:bg-accent hover:text-white transition-colors duration-200">
-                  View Full Menu
-                </a>
-              </div>
-              <div class="p-4">
-                <div class="flex items-start justify-between mb-1">
-                  <h3 class="font-semibold text-lg">Matcha Latte</h3>
+            <article class="menu-card bg-white rounded-2xl overflow-hidden shadow-sm">
+              <img src="/images/non-coffee-001.jpg" alt="Matcha Latte — ceremonial grade matcha with oat milk" loading="lazy" width="600" height="400" class="w-full h-48 object-cover" />
+              <div class="card-body p-4">
+                <h3 class="font-semibold text-lg mb-1">Matcha Latte</h3>
+                <p class="text-sm text-gray-600 mb-2">Ceremonial grade matcha whisked with creamy oat milk.</p>
+                <div class="flex items-center justify-between">
+                  <span class="font-bold text-primary">Rp 38.000</span>
                   <span class="badge">New</span>
                 </div>
-                <p class="text-sm text-gray-600 mb-2">Ceremonial grade matcha whisked with creamy oat milk.</p>
-                <span class="font-bold text-primary">Rp 38.000</span>
               </div>
             </article>
 
             <!-- non-coffee-003: Chocolate Frappe -->
-            <article class="featured-card relative shrink-0 w-72 md:w-auto bg-white rounded-2xl overflow-hidden shadow-sm snap-start group">
-              <img src="/images/non-coffee-003.jpg" alt="Chocolate Frappe" loading="lazy" class="w-full h-56 object-cover" />
-              <div class="overlay absolute inset-0 flex items-center justify-center">
-                <a href="/menu.html" class="cta-btn hidden items-center gap-2 bg-white text-primary-dark font-semibold px-5 py-2 rounded-full hover:bg-accent hover:text-white transition-colors duration-200">
-                  View Full Menu
-                </a>
-              </div>
-              <div class="p-4">
-                <div class="flex items-start justify-between mb-1">
-                  <h3 class="font-semibold text-lg">Chocolate Frappe</h3>
-                </div>
+            <article class="menu-card bg-white rounded-2xl overflow-hidden shadow-sm">
+              <img src="/images/non-coffee-003.jpg" alt="Chocolate Frappe — dark chocolate blended with ice" loading="lazy" width="600" height="400" class="w-full h-48 object-cover" />
+              <div class="card-body p-4">
+                <h3 class="font-semibold text-lg mb-1">Chocolate Frappe</h3>
                 <p class="text-sm text-gray-600 mb-2">Rich dark chocolate blended with ice and topped with whipped cream.</p>
-                <span class="font-bold text-primary">Rp 40.000</span>
+                <div class="flex items-center justify-between">
+                  <span class="font-bold text-primary">Rp 40.000</span>
+                </div>
               </div>
             </article>
 
             <!-- food-001: Avocado Toast -->
-            <article class="featured-card relative shrink-0 w-72 md:w-auto bg-white rounded-2xl overflow-hidden shadow-sm snap-start group">
-              <img src="/images/food-001.jpg" alt="Avocado Toast" loading="lazy" class="w-full h-56 object-cover" />
-              <div class="overlay absolute inset-0 flex items-center justify-center">
-                <a href="/menu.html" class="cta-btn hidden items-center gap-2 bg-white text-primary-dark font-semibold px-5 py-2 rounded-full hover:bg-accent hover:text-white transition-colors duration-200">
-                  View Full Menu
-                </a>
-              </div>
-              <div class="p-4">
-                <div class="flex items-start justify-between mb-1">
-                  <h3 class="font-semibold text-lg">Avocado Toast</h3>
+            <article class="menu-card bg-white rounded-2xl overflow-hidden shadow-sm">
+              <img src="/images/food-001.jpg" alt="Avocado Toast — sourdough with smashed avocado and poached egg" loading="lazy" width="600" height="400" class="w-full h-48 object-cover" />
+              <div class="card-body p-4">
+                <h3 class="font-semibold text-lg mb-1">Avocado Toast</h3>
+                <p class="text-sm text-gray-600 mb-2">Sourdough toast topped with smashed avocado, chili flakes, and poached egg.</p>
+                <div class="flex items-center justify-between">
+                  <span class="font-bold text-primary">Rp 55.000</span>
                   <span class="badge">Staff Pick</span>
                 </div>
-                <p class="text-sm text-gray-600 mb-2">Sourdough toast topped with smashed avocado, chili flakes, and poached egg.</p>
-                <span class="font-bold text-primary">Rp 55.000</span>
               </div>
             </article>
 
