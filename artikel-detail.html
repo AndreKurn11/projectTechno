@@ -4,19 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- SEO Meta Tags -->
-    <title>Artikel — Brew &amp; Co Cafe Jakarta</title>
-    <meta name="description" content="Baca artikel seputar kopi, tips brewing, dan cerita di balik secangkir kopi dari Brew &amp; Co — cafe handcrafted coffee di Jakarta." />
-    <meta name="keywords" content="artikel kopi, tips kopi, brewing guide, cold brew, latte art, cafe Jakarta, Brew and Co" />
+    <!-- Diisi dinamis oleh JS -->
+    <title>Artikel — Brew &amp; Co</title>
+    <meta name="description" content="" />
     <meta name="robots" content="index, follow" />
-    <link rel="canonical" href="https://brewandco.id/artikel.html" />
 
-    <!-- Open Graph -->
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Artikel — Brew &amp; Co Cafe Jakarta" />
-    <meta property="og:description" content="Baca artikel seputar kopi, tips brewing, dan cerita di balik secangkir kopi dari Brew &amp; Co." />
-    <meta property="og:url" content="https://brewandco.id/artikel.html" />
-    <meta property="og:image" content="https://brewandco.id/images/hero-bg.png" />
+    <!-- Open Graph (diisi dinamis) -->
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:url" content="" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -88,39 +86,78 @@
     <!-- ===== MAIN CONTENT ===== -->
     <main>
 
-      <!-- Page Hero -->
-      <section class="bg-primary-dark pt-32 pb-12 px-4 text-center">
-        <div class="max-w-3xl mx-auto">
-          <h1 class="font-display text-4xl md:text-5xl font-bold text-white mb-4">Artikel</h1>
-          <p class="text-white/70 text-lg">Cerita, tips, dan inspirasi dari dunia kopi — langsung dari dapur Brew &amp; Co.</p>
+      <!-- Loading state -->
+      <div id="artikel-loading" class="min-h-screen flex items-center justify-center pt-16">
+        <div class="text-center text-gray-400">
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="mx-auto mb-3 animate-spin opacity-40" aria-hidden="true"><path d="M21 12a9 9 0 1 1-6.219-8.56"/></svg>
+          <p>Memuat artikel...</p>
         </div>
-      </section>
+      </div>
 
-      <!-- Filter Kategori -->
-      <section class="py-8 px-4 border-b border-gray-200">
-        <div class="max-w-7xl mx-auto flex flex-wrap justify-center gap-2" role="group" aria-label="Filter kategori artikel">
-          <button data-filter="all"     class="artikel-filter px-5 py-2 rounded-full font-semibold text-sm transition-colors duration-200 bg-primary text-white focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2">Semua</button>
-          <button data-filter="kopi"    class="artikel-filter px-5 py-2 rounded-full font-semibold text-sm transition-colors duration-200 bg-gray-100 text-gray-700 hover:bg-primary hover:text-white focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2">Kopi</button>
-          <button data-filter="brewing" class="artikel-filter px-5 py-2 rounded-full font-semibold text-sm transition-colors duration-200 bg-gray-100 text-gray-700 hover:bg-primary hover:text-white focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2">Brewing Guide</button>
-          <button data-filter="gaya-hidup" class="artikel-filter px-5 py-2 rounded-full font-semibold text-sm transition-colors duration-200 bg-gray-100 text-gray-700 hover:bg-primary hover:text-white focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2">Gaya Hidup</button>
+      <!-- Error state (hidden by default) -->
+      <div id="artikel-error" class="hidden min-h-screen flex items-center justify-center pt-16 px-4">
+        <div class="text-center max-w-md">
+          <p class="text-5xl mb-4">☕</p>
+          <h1 class="font-display text-2xl font-bold mb-2">Artikel tidak ditemukan</h1>
+          <p class="text-gray-500 mb-6">Artikel yang kamu cari tidak ada atau sudah dipindahkan.</p>
+          <a href="/artikel.html" class="btn-primary inline-flex items-center gap-2">
+            Kembali ke Artikel
+          </a>
         </div>
-      </section>
+      </div>
 
-      <!-- Artikel Grid -->
-      <section class="py-16 px-4" aria-label="Daftar artikel">
-        <div class="max-w-7xl mx-auto">
-          <div id="artikel-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- Cards dirender oleh artikel-page.js dari src/data/articles.json -->
+      <!-- Artikel content (hidden until loaded) -->
+      <article id="artikel-content" class="hidden">
+
+        <!-- Hero image -->
+        <div class="w-full h-72 md:h-96 overflow-hidden mt-16">
+          <img id="detail-gambar" src="" alt="" class="w-full h-full object-cover" />
+        </div>
+
+        <!-- Article body -->
+        <div class="max-w-3xl mx-auto px-4 py-12">
+
+          <!-- Breadcrumb -->
+          <nav aria-label="Breadcrumb" class="mb-6">
+            <ol class="flex items-center gap-2 text-sm text-gray-400">
+              <li><a href="/artikel.html" class="hover:text-primary transition-colors duration-200">Artikel</a></li>
+              <li aria-hidden="true">›</li>
+              <li id="detail-kategori-breadcrumb" class="text-primary font-medium"></li>
+            </ol>
+          </nav>
+
+          <!-- Meta -->
+          <div class="flex items-center gap-3 mb-4">
+            <span id="detail-kategori-badge" class="bg-accent/10 text-primary text-xs font-semibold px-3 py-1 rounded-full"></span>
+            <span id="detail-tanggal" class="text-gray-400 text-sm"></span>
           </div>
 
-          <!-- Empty state (hidden by default) -->
-          <div id="artikel-empty" class="hidden text-center py-16 text-gray-400">
-            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="mx-auto mb-4 opacity-40" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
-            <p class="text-lg font-semibold">Belum ada artikel di kategori ini.</p>
-          </div>
+          <!-- Title -->
+          <h1 id="detail-judul" class="font-display text-3xl md:text-4xl font-bold leading-tight mb-8"></h1>
+
+          <!-- Body content -->
+          <div id="detail-body" class="prose-content text-gray-700 leading-relaxed space-y-5"></div>
+
+          <!-- Divider -->
+          <hr class="my-10 border-gray-200" />
+
+          <!-- Back link -->
+          <a href="/artikel.html" class="inline-flex items-center gap-2 text-primary font-semibold hover:text-accent transition-colors duration-200">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></svg>
+            Kembali ke Semua Artikel
+          </a>
 
         </div>
-      </section>
+
+        <!-- Related articles -->
+        <section class="bg-gray-50 py-16 px-4">
+          <div class="max-w-7xl mx-auto">
+            <h2 class="font-display text-2xl font-bold mb-8">Artikel Lainnya</h2>
+            <div id="related-grid" class="grid grid-cols-1 md:grid-cols-3 gap-6"></div>
+          </div>
+        </section>
+
+      </article>
 
     </main>
 
@@ -151,25 +188,14 @@
         <div>
           <p class="font-semibold mb-3">Follow Us</p>
           <div class="flex gap-4">
-            <!-- Instagram -->
             <a href="#" aria-label="Instagram" class="text-white hover:text-accent transition-colors duration-200 min-h-[44px] min-w-[44px] flex items-center justify-center">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
-                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
-                <circle cx="12" cy="12" r="4"/>
-                <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/>
-              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg>
             </a>
-            <!-- Facebook -->
             <a href="#" aria-label="Facebook" class="text-white hover:text-accent transition-colors duration-200 min-h-[44px] min-w-[44px] flex items-center justify-center">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
-                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
-              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
             </a>
-            <!-- TikTok -->
             <a href="#" aria-label="TikTok" class="text-white hover:text-accent transition-colors duration-200 min-h-[44px] min-w-[44px] flex items-center justify-center">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
-                <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.76a4.85 4.85 0 0 1-1.01-.07z"/>
-              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.76a4.85 4.85 0 0 1-1.01-.07z"/></svg>
             </a>
           </div>
         </div>
@@ -177,6 +203,6 @@
       </div>
     </footer>
 
-    <script type="module" src="/src/js/artikel-page.js"></script>
+    <script type="module" src="/src/js/artikel-detail-page.js"></script>
   </body>
 </html>
