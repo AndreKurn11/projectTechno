@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Diisi dinamis oleh JS -->
+    <title>Artikel — Brew &amp; Co</title>
+    <meta name="description" content="" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph (diisi dinamis) -->
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:url" content="" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" crossorigin src="/assets/artikelDetail-BCC3FEBM.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/nav-BAwE6osX.js">
+    <link rel="stylesheet" crossorigin href="/assets/nav-gAQhHuBl.css">
+  </head>
+  <body>
+
+    <!-- ===== HEADER / NAV ===== -->
+    <header id="site-header" class="fixed top-0 left-0 right-0 z-50 transition-colors duration-300">
+      <nav aria-label="Main navigation" class="max-w-7xl mx-auto px-4 flex items-center justify-between h-16">
+
+        <!-- Logo -->
+        <a href="/" class="font-display text-xl font-bold text-white min-h-[44px] min-w-[44px] flex items-center">
+          Brew &amp; Co
+        </a>
+
+        <!-- Desktop links -->
+        <ul class="hidden md:flex items-center gap-6 list-none m-0 p-0">
+          <li><a href="/"               class="text-white hover:text-accent transition-colors duration-200 min-h-[44px] min-w-[44px] flex items-center">Home</a></li>
+          <li><a href="/#about"         class="text-white hover:text-accent transition-colors duration-200 min-h-[44px] min-w-[44px] flex items-center">About</a></li>
+          <li><a href="/menu.html"      class="text-white hover:text-accent transition-colors duration-200 min-h-[44px] min-w-[44px] flex items-center">Menu</a></li>
+          <li><a href="/artikel.html"   class="text-white hover:text-accent transition-colors duration-200 min-h-[44px] min-w-[44px] flex items-center" aria-current="page">Artikel</a></li>
+          <li><a href="/#gallery"       class="text-white hover:text-accent transition-colors duration-200 min-h-[44px] min-w-[44px] flex items-center">Gallery</a></li>
+          <li><a href="/#testimonials"  class="text-white hover:text-accent transition-colors duration-200 min-h-[44px] min-w-[44px] flex items-center">Reviews</a></li>
+          <li><a href="/#location"      class="text-white hover:text-accent transition-colors duration-200 min-h-[44px] min-w-[44px] flex items-center">Location</a></li>
+        </ul>
+
+        <!-- Hamburger button (mobile) -->
+        <button
+          id="hamburger-btn"
+          type="button"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          class="md:hidden flex items-center justify-center min-h-[44px] min-w-[44px] text-white focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+            <line x1="3" y1="6"  x2="21" y2="6"  />
+            <line x1="3" y1="12" x2="21" y2="12" />
+            <line x1="3" y1="18" x2="21" y2="18" />
+          </svg>
+        </button>
+
+      </nav>
+
+      <!-- Mobile menu -->
+      <div
+        id="mobile-menu"
+        class="md:hidden overflow-hidden max-h-0 transition-all duration-300 bg-primary-dark"
+        aria-hidden="true"
+      >
+        <ul class="flex flex-col px-4 pb-4 gap-1 list-none m-0 p-0">
+          <li><a href="/"               class="text-white hover:text-accent transition-colors duration-200 min-h-[44px] flex items-center">Home</a></li>
+          <li><a href="/#about"         class="text-white hover:text-accent transition-colors duration-200 min-h-[44px] flex items-center">About</a></li>
+          <li><a href="/menu.html"      class="text-white hover:text-accent transition-colors duration-200 min-h-[44px] flex items-center">Menu</a></li>
+          <li><a href="/artikel.html"   class="text-white hover:text-accent transition-colors duration-200 min-h-[44px] flex items-center">Artikel</a></li>
+          <li><a href="/#gallery"       class="text-white hover:text-accent transition-colors duration-200 min-h-[44px] flex items-center">Gallery</a></li>
+          <li><a href="/#testimonials"  class="text-white hover:text-accent transition-colors duration-200 min-h-[44px] flex items-center">Reviews</a></li>
+          <li><a href="/#location"      class="text-white hover:text-accent transition-colors duration-200 min-h-[44px] flex items-center">Location</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <main>
+
+      <!-- Loading state -->
+      <div id="artikel-loading" class="min-h-screen flex items-center justify-center pt-16">
+        <div class="text-center text-gray-400">
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="mx-auto mb-3 animate-spin opacity-40" aria-hidden="true"><path d="M21 12a9 9 0 1 1-6.219-8.56"/></svg>
+          <p>Memuat artikel...</p>
+        </div>
+      </div>
+
+      <!-- Error state (hidden by default) -->
+      <div id="artikel-error" class="hidden min-h-screen flex items-center justify-center pt-16 px-4">
+        <div class="text-center max-w-md">
+          <p class="text-5xl mb-4">☕</p>
+          <h1 class="font-display text-2xl font-bold mb-2">Artikel tidak ditemukan</h1>
+          <p class="text-gray-500 mb-6">Artikel yang kamu cari tidak ada atau sudah dipindahkan.</p>
+          <a href="/artikel.html" class="btn-primary inline-flex items-center gap-2">
+            Kembali ke Artikel
+          </a>
+        </div>
+      </div>
+
+      <!-- Artikel content (hidden until loaded) -->
+      <article id="artikel-content" class="hidden">
+
+        <!-- Hero image -->
+        <div class="w-full h-72 md:h-96 overflow-hidden mt-16">
+          <img id="detail-gambar" src="" alt="" class="w-full h-full object-cover" />
+        </div>
+
+        <!-- Article body -->
+        <div class="max-w-3xl mx-auto px-4 py-12">
+
+          <!-- Breadcrumb -->
+          <nav aria-label="Breadcrumb" class="mb-6">
+            <ol class="flex items-center gap-2 text-sm text-gray-400">
+              <li><a href="/artikel.html" class="hover:text-primary transition-colors duration-200">Artikel</a></li>
+              <li aria-hidden="true">›</li>
+              <li id="detail-kategori-breadcrumb" class="text-primary font-medium"></li>
+            </ol>
+          </nav>
+
+          <!-- Meta -->
+          <div class="flex items-center gap-3 mb-4">
+            <span id="detail-kategori-badge" class="bg-accent/10 text-primary text-xs font-semibold px-3 py-1 rounded-full"></span>
+            <span id="detail-tanggal" class="text-gray-400 text-sm"></span>
+          </div>
+
+          <!-- Title -->
+          <h1 id="detail-judul" class="font-display text-3xl md:text-4xl font-bold leading-tight mb-8"></h1>
+
+          <!-- Body content -->
+          <div id="detail-body" class="prose-content text-gray-700 leading-relaxed space-y-5"></div>
+
+          <!-- Divider -->
+          <hr class="my-10 border-gray-200" />
+
+          <!-- Back link -->
+          <a href="/artikel.html" class="inline-flex items-center gap-2 text-primary font-semibold hover:text-accent transition-colors duration-200">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></svg>
+            Kembali ke Semua Artikel
+          </a>
+
+        </div>
+
+        <!-- Related articles -->
+        <section class="bg-gray-50 py-16 px-4">
+          <div class="max-w-7xl mx-auto">
+            <h2 class="font-display text-2xl font-bold mb-8">Artikel Lainnya</h2>
+            <div id="related-grid" class="grid grid-cols-1 md:grid-cols-3 gap-6"></div>
+          </div>
+        </section>
+
+      </article>
+
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer id="footer" class="bg-primary-dark text-white py-12 px-4">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+
+        <!-- Column 1: Brand -->
+        <div>
+          <p class="font-display text-xl font-bold mb-2">Brew &amp; Co</p>
+          <p class="text-sm opacity-75">Where every cup tells a story.</p>
+          <p class="text-xs opacity-50 mt-4">&copy; <span id="footer-year"></span> Brew &amp; Co. All rights reserved.</p>
+        </div>
+
+        <!-- Column 2: Navigation links -->
+        <nav aria-label="Footer navigation">
+          <ul class="grid grid-cols-2 gap-x-8 gap-y-2 list-none m-0 p-0">
+            <li><a href="/"              class="text-white hover:text-accent transition-colors duration-200">Home</a></li>
+            <li><a href="/#gallery"      class="text-white hover:text-accent transition-colors duration-200">Gallery</a></li>
+            <li><a href="/#about"        class="text-white hover:text-accent transition-colors duration-200">About</a></li>
+            <li><a href="/#testimonials" class="text-white hover:text-accent transition-colors duration-200">Reviews</a></li>
+            <li><a href="/menu.html"     class="text-white hover:text-accent transition-colors duration-200">Menu</a></li>
+            <li><a href="/#location"     class="text-white hover:text-accent transition-colors duration-200">Location</a></li>
+          </ul>
+        </nav>
+
+        <!-- Column 3: Social icons -->
+        <div>
+          <p class="font-semibold mb-3">Follow Us</p>
+          <div class="flex gap-4">
+            <a href="#" aria-label="Instagram" class="text-white hover:text-accent transition-colors duration-200 min-h-[44px] min-w-[44px] flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg>
+            </a>
+            <a href="#" aria-label="Facebook" class="text-white hover:text-accent transition-colors duration-200 min-h-[44px] min-w-[44px] flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="#" aria-label="TikTok" class="text-white hover:text-accent transition-colors duration-200 min-h-[44px] min-w-[44px] flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.76a4.85 4.85 0 0 1-1.01-.07z"/></svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+
+  </body>
+</html>
