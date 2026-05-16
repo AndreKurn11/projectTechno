@@ -6,12 +6,17 @@ export function initNav() {
   const mobileLinks = document.querySelectorAll('#mobile-menu a[href^="#"]');
 
   // Sticky nav: toggle 'is-sticky' class when scrolled past hero height
-  // On pages without a hero section, apply sticky immediately after a small scroll
-  window.addEventListener('scroll', () => {
+  // Pages with 'nav-dark' class keep dark background at all times (no toggle)
+  function updateSticky() {
+    if (header.classList.contains('nav-dark')) return;
     const hero = document.getElementById('hero');
     const threshold = hero ? hero.offsetHeight : 80;
     header.classList.toggle('is-sticky', window.scrollY > threshold);
-  });
+  }
+
+  // Run on load to set correct initial state
+  updateSticky();
+  window.addEventListener('scroll', updateSticky);
 
   // Smooth scroll for all nav anchor links
   navLinks.forEach(link => {
