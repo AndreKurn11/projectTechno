@@ -25,7 +25,7 @@ async function loadArtikelDetail() {
   }
 
   try {
-    const res = await fetch('/src/data/articles.json');
+    const res = await fetch('/data/articles.json');
     if (!res.ok) throw new Error('Gagal memuat data artikel');
     const articles = await res.json();
 

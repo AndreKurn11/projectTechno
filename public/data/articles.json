@@ -1,0 +1,250 @@
+[
+  {
+    "id": "espresso-latte-cappuccino",
+    "kategori": "kopi",
+    "kategoriLabel": "Kopi",
+    "tanggal": "12 Mei 2025",
+    "gambar": "/images/coffee-001.jpg",
+    "gambarAlt": "Secangkir signature latte dengan latte art indah",
+    "judul": "Mengenal Perbedaan Espresso, Latte, dan Cappuccino",
+    "ringkasan": "Banyak yang masih bingung membedakan ketiga minuman kopi populer ini. Yuk, kita bahas dari sisi bahan, rasio susu, hingga cara penyajiannya agar kamu bisa memesan dengan lebih percaya diri.",
+    "konten": [
+      {
+        "tipe": "paragraf",
+        "teks": "Espresso, latte, dan cappuccino adalah tiga minuman kopi yang paling sering dipesan di cafe. Meski ketiganya berbasis espresso, perbedaannya terletak pada jumlah susu, tekstur busa, dan cara penyajiannya."
+      },
+      {
+        "tipe": "subjudul",
+        "teks": "Espresso — Dasar dari Segalanya"
+      },
+      {
+        "tipe": "paragraf",
+        "teks": "Espresso adalah minuman kopi pekat yang dibuat dengan mengalirkan air panas bertekanan tinggi melalui bubuk kopi yang dipadatkan. Hasilnya adalah shot kopi sekitar 30ml dengan rasa kuat, sedikit pahit, dan crema keemasan di atasnya. Espresso adalah fondasi dari hampir semua minuman kopi berbasis susu."
+      },
+      {
+        "tipe": "subjudul",
+        "teks": "Latte — Lembut dan Creamy"
+      },
+      {
+        "tipe": "paragraf",
+        "teks": "Latte terdiri dari satu atau dua shot espresso yang dicampur dengan susu yang di-steam dalam jumlah banyak — biasanya rasio 1:3 hingga 1:5 antara espresso dan susu. Busa susunya tipis dan lembut, sekitar 1cm. Rasanya lebih ringan dan creamy dibanding espresso murni, cocok untuk yang baru mulai minum kopi."
+      },
+      {
+        "tipe": "subjudul",
+        "teks": "Cappuccino — Seimbang dan Berbusa"
+      },
+      {
+        "tipe": "paragraf",
+        "teks": "Cappuccino memiliki komposisi yang lebih seimbang: sepertiga espresso, sepertiga susu steam, dan sepertiga busa susu yang tebal. Rasanya lebih kuat dari latte karena rasio susu yang lebih sedikit, namun tekstur busanya yang tebal memberikan sensasi tersendiri di setiap tegukan."
+      },
+      {
+        "tipe": "subjudul",
+        "teks": "Mana yang Harus Kamu Pilih?"
+      },
+      {
+        "tipe": "paragraf",
+        "teks": "Kalau kamu suka rasa kopi yang kuat tanpa susu, pilih espresso. Kalau suka yang lembut dan creamy, latte adalah pilihan tepat. Dan kalau ingin keseimbangan antara kopi dan susu dengan tekstur busa yang menyenangkan, cappuccino adalah jawabannya. Di Brew & Co, ketiganya tersedia dengan biji kopi pilihan yang freshly roasted setiap harinya."
+      }
+    ]
+  },
+  {
+    "id": "cold-brew-di-rumah",
+    "kategori": "brewing",
+    "kategoriLabel": "Brewing Guide",
+    "tanggal": "5 Mei 2025",
+    "gambar": "/images/coffee-002.jpg",
+    "gambarAlt": "Cold brew kopi dalam gelas bening dengan es batu",
+    "judul": "Cara Membuat Cold Brew di Rumah dengan Mudah",
+    "ringkasan": "Cold brew tidak harus dibeli di cafe. Dengan biji kopi berkualitas dan waktu steeping yang tepat, kamu bisa membuat cold brew sendiri di rumah hanya dengan peralatan sederhana.",
+    "konten": [
+      {
+        "tipe": "paragraf",
+        "teks": "Cold brew adalah metode menyeduh kopi menggunakan air dingin atau suhu ruang selama 12–24 jam. Hasilnya adalah kopi yang lebih smooth, less acidic, dan naturally sweet dibanding kopi yang diseduh panas. Kabar baiknya, kamu tidak butuh peralatan mahal untuk membuatnya."
+      },
+      {
+        "tipe": "subjudul",
+        "teks": "Bahan yang Dibutuhkan"
+      },
+      {
+        "tipe": "paragraf",
+        "teks": "Kamu hanya butuh: 100 gram biji kopi medium-coarse grind, 1 liter air dingin atau air suhu ruang, toples kaca atau pitcher, dan saringan kopi atau kain muslin. Pilih biji kopi dengan profil rasa yang kamu suka — single origin Ethiopia untuk rasa fruity, atau blend Sumatra untuk rasa earthy dan bold."
+      },
+      {
+        "tipe": "subjudul",
+        "teks": "Langkah-langkah Pembuatan"
+      },
+      {
+        "tipe": "paragraf",
+        "teks": "Pertama, giling biji kopi dengan ukuran coarse (kasar) — sekitar ukuran gula pasir kasar. Masukkan kopi ke dalam toples, tuang air dingin, aduk perlahan hingga semua kopi basah. Tutup toples dan simpan di kulkas selama 18–24 jam. Setelah itu, saring kopi menggunakan saringan halus atau kain muslin. Cold brew concentrate siap disajikan!"
+      },
+      {
+        "tipe": "subjudul",
+        "teks": "Tips Penyajian"
+      },
+      {
+        "tipe": "paragraf",
+        "teks": "Cold brew concentrate yang kamu buat bisa diencerkan dengan air atau susu dengan rasio 1:1. Sajikan di atas es batu untuk pengalaman terbaik. Cold brew bisa disimpan di kulkas hingga 2 minggu tanpa kehilangan kualitas rasa. Coba tambahkan sedikit simple syrup atau susu oat untuk variasi yang lebih creamy."
+      }
+    ]
+  },
+  {
+    "id": "cafe-untuk-remote-working",
+    "kategori": "gaya-hidup",
+    "kategoriLabel": "Gaya Hidup",
+    "tanggal": "28 Apr 2025",
+    "gambar": "/images/gallery-002.jpg",
+    "gambarAlt": "Suasana cafe yang nyaman untuk bekerja dan bersantai",
+    "judul": "Kenapa Cafe Jadi Tempat Favorit untuk Remote Working?",
+    "ringkasan": "Dari suasana yang kondusif hingga aroma kopi yang membantu fokus, ada banyak alasan mengapa semakin banyak pekerja remote memilih cafe sebagai kantor kedua mereka.",
+    "konten": [
+      {
+        "tipe": "paragraf",
+        "teks": "Tren remote working yang semakin meluas membuat banyak orang mencari tempat kerja alternatif selain rumah. Cafe menjadi pilihan utama bagi jutaan pekerja remote di seluruh dunia — dan ada alasan ilmiah di baliknya."
+      },
+      {
+        "tipe": "subjudul",
+        "teks": "Ambient Noise yang Meningkatkan Fokus"
+      },
+      {
+        "tipe": "paragraf",
+        "teks": "Penelitian dari University of Illinois menemukan bahwa tingkat kebisingan sedang (sekitar 70 desibel) — seperti suara percakapan ringan dan musik latar di cafe — justru meningkatkan kreativitas dan fokus dibanding keheningan total. Otak kita bekerja lebih baik dengan sedikit stimulasi latar belakang."
+      },
+      {
+        "tipe": "subjudul",
+        "teks": "Efek Psikologis Berganti Lingkungan"
+      },
+      {
+        "tipe": "paragraf",
+        "teks": "Bekerja dari tempat yang sama setiap hari bisa menyebabkan mental fatigue. Berganti ke cafe memberikan stimulasi visual baru yang me-refresh otak. Ini yang disebut 'environmental change effect' — perubahan lingkungan fisik membantu otak keluar dari mode autopilot dan lebih engaged dengan pekerjaan."
+      },
+      {
+        "tipe": "subjudul",
+        "teks": "Ritual Kopi sebagai Anchor Produktivitas"
+      },
+      {
+        "tipe": "paragraf",
+        "teks": "Memesan kopi di cafe menciptakan ritual yang menjadi sinyal bagi otak bahwa 'sekarang waktunya bekerja'. Aroma kopi sendiri terbukti meningkatkan kewaspadaan dan konsentrasi. Di Brew & Co, kami menyediakan WiFi cepat, colokan listrik di setiap meja, dan suasana yang dirancang untuk mendukung produktivitasmu."
+      }
+    ]
+  },
+  {
+    "id": "biji-kopi-lokal-indonesia",
+    "kategori": "kopi",
+    "kategoriLabel": "Kopi",
+    "tanggal": "20 Apr 2025",
+    "gambar": "/images/gallery-003.jpg",
+    "gambarAlt": "Biji kopi segar dalam sendok kayu",
+    "judul": "Mengenal Asal Usul Biji Kopi Lokal Indonesia",
+    "ringkasan": "Indonesia adalah salah satu produsen kopi terbesar di dunia. Dari Aceh Gayo hingga Toraja, setiap daerah punya karakter rasa yang unik dan cerita yang kaya di balik setiap biji kopinya.",
+    "konten": [
+      {
+        "tipe": "paragraf",
+        "teks": "Indonesia menempati posisi keempat sebagai produsen kopi terbesar di dunia, dengan kekayaan varietas yang tersebar dari Sabang sampai Merauke. Setiap daerah penghasil kopi di Indonesia memiliki terroir unik yang menghasilkan profil rasa yang berbeda-beda."
+      },
+      {
+        "tipe": "subjudul",
+        "teks": "Kopi Gayo — Aceh"
+      },
+      {
+        "tipe": "paragraf",
+        "teks": "Kopi Gayo dari dataran tinggi Aceh Tengah adalah salah satu kopi specialty paling terkenal di dunia. Ditanam di ketinggian 1.200–1.700 mdpl, kopi ini memiliki body yang full, keasaman rendah, dan aroma earthy dengan sentuhan herbal. Mayoritas diproses dengan metode wet-hulled (Giling Basah) yang khas Sumatera."
+      },
+      {
+        "tipe": "subjudul",
+        "teks": "Kopi Toraja — Sulawesi"
+      },
+      {
+        "tipe": "paragraf",
+        "teks": "Kopi Toraja dari Sulawesi Selatan dikenal dengan rasa yang kompleks — perpaduan antara dark chocolate, rempah-rempah, dan sedikit fruity. Ditanam di ketinggian hingga 1.800 mdpl dengan tanah vulkanik yang kaya mineral. Kopi Toraja adalah favorit para pecinta kopi yang menginginkan pengalaman rasa yang mendalam."
+      },
+      {
+        "tipe": "subjudul",
+        "teks": "Kopi Flores Bajawa"
+      },
+      {
+        "tipe": "paragraf",
+        "teks": "Dari Nusa Tenggara Timur, kopi Flores Bajawa menawarkan profil rasa yang lebih ringan dengan keasaman yang menyegarkan, aroma floral, dan aftertaste yang bersih. Ditanam oleh petani kecil di lereng gunung berapi, kopi ini semakin populer di kalangan specialty coffee enthusiast. Di Brew & Co, kami menggunakan biji kopi lokal pilihan yang freshly roasted untuk memastikan setiap cangkir menceritakan kekayaan kopi Indonesia."
+      }
+    ]
+  },
+  {
+    "id": "tips-latte-art-pemula",
+    "kategori": "brewing",
+    "kategoriLabel": "Brewing Guide",
+    "tanggal": "14 Apr 2025",
+    "gambar": "/images/gallery-007.jpg",
+    "gambarAlt": "Steam wand mesin espresso sedang membuih susu",
+    "judul": "Tips Membuat Latte Art untuk Pemula",
+    "ringkasan": "Latte art bukan hanya soal estetika — ini adalah tanda bahwa susu di-steam dengan benar. Pelajari teknik dasar frothing dan pouring agar kamu bisa membuat pola hati atau rosetta di rumah.",
+    "konten": [
+      {
+        "tipe": "paragraf",
+        "teks": "Latte art adalah seni menuangkan susu yang telah di-steam ke dalam espresso untuk menciptakan pola visual di permukaan minuman. Selain indah, latte art yang bagus adalah indikator bahwa susu telah di-steam dengan tekstur yang tepat — silky microfoam yang menyatu sempurna dengan espresso."
+      },
+      {
+        "tipe": "subjudul",
+        "teks": "Kunci Utama: Tekstur Susu yang Tepat"
+      },
+      {
+        "tipe": "paragraf",
+        "teks": "Langkah pertama dan terpenting adalah menghasilkan microfoam yang sempurna. Gunakan susu full cream dingin (4°C), masukkan steam wand tepat di bawah permukaan susu dengan sudut 45 derajat. Posisikan wand sedikit off-center agar susu berputar. Steam hingga suhu 60–65°C — jangan lebih panas karena susu akan kehilangan teksturnya."
+      },
+      {
+        "tipe": "subjudul",
+        "teks": "Teknik Pouring Dasar: Pola Hati"
+      },
+      {
+        "tipe": "paragraf",
+        "teks": "Setelah susu siap, ketuk pitcher di meja untuk menghilangkan gelembung besar, lalu putar untuk menyatukan foam. Miringkan gelas espresso sekitar 45 derajat. Tuang susu dari ketinggian sekitar 10cm untuk mencampur dulu, lalu turunkan pitcher mendekati permukaan. Gerakkan pitcher ke depan-belakang dengan cepat sambil perlahan tegakkan gelas. Akhiri dengan menarik garis lurus ke depan untuk membentuk hati."
+      },
+      {
+        "tipe": "subjudul",
+        "teks": "Latihan adalah Kuncinya"
+      },
+      {
+        "tipe": "paragraf",
+        "teks": "Latte art membutuhkan latihan konsisten. Mulai dengan pola hati sederhana sebelum mencoba rosetta atau tulip. Kamu bisa berlatih dengan air dan sabun cuci piring untuk mensimulasikan tekstur susu tanpa membuang bahan. Di Brew & Co, barista kami dengan senang hati berbagi tips langsung jika kamu penasaran — jangan ragu untuk bertanya!"
+      }
+    ]
+  },
+  {
+    "id": "ritual-pagi-dengan-kopi",
+    "kategori": "gaya-hidup",
+    "kategoriLabel": "Gaya Hidup",
+    "tanggal": "7 Apr 2025",
+    "gambar": "/images/gallery-006.jpg",
+    "gambarAlt": "Flat lay cold brew, croissant, dan buku catatan di atas meja marmer",
+    "judul": "Ritual Pagi yang Lebih Bermakna dengan Secangkir Kopi",
+    "ringkasan": "Memulai hari dengan kopi bukan sekadar kebiasaan — ini adalah ritual yang bisa mengubah mood dan produktivitas harianmu. Temukan cara membuat morning routine-mu lebih intentional.",
+    "konten": [
+      {
+        "tipe": "paragraf",
+        "teks": "Di era yang serba cepat ini, pagi hari sering kali diisi dengan terburu-buru. Namun penelitian menunjukkan bahwa memiliki morning ritual yang intentional — termasuk menikmati kopi dengan penuh kesadaran — dapat secara signifikan meningkatkan mood, fokus, dan produktivitas sepanjang hari."
+      },
+      {
+        "tipe": "subjudul",
+        "teks": "Mindful Coffee Drinking"
+      },
+      {
+        "tipe": "paragraf",
+        "teks": "Alih-alih minum kopi sambil scroll media sosial atau membalas email, coba luangkan 10 menit untuk benar-benar menikmati kopimu. Perhatikan aroma, rasakan kehangatan cangkir di tanganmu, nikmati setiap tegukan. Praktik mindfulness sederhana ini terbukti menurunkan kadar kortisol (hormon stres) dan meningkatkan rasa syukur di pagi hari."
+      },
+      {
+        "tipe": "subjudul",
+        "teks": "Membangun Ritual yang Konsisten"
+      },
+      {
+        "tipe": "paragraf",
+        "teks": "Konsistensi adalah kunci. Bangun ritual pagi yang sama setiap hari — misalnya: bangun, minum segelas air, buat kopi, duduk di tempat favorit, dan rencanakan tiga hal yang ingin dicapai hari ini. Ritual yang berulang menciptakan anchor psikologis yang membantu otak beralih dari mode istirahat ke mode produktif."
+      },
+      {
+        "tipe": "subjudul",
+        "teks": "Kopi sebagai Momen Koneksi"
+      },
+      {
+        "tipe": "paragraf",
+        "teks": "Ritual kopi pagi tidak harus dilakukan sendiri. Menikmati kopi bersama pasangan, keluarga, atau teman sebelum memulai hari adalah cara sederhana untuk memperkuat koneksi sosial. Di Brew & Co, kami percaya bahwa setiap cangkir kopi adalah undangan untuk memperlambat langkah dan terhubung — dengan diri sendiri maupun orang-orang di sekitarmu."
+      }
+    ]
+  }
+]

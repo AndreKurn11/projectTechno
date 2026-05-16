@@ -18,7 +18,7 @@ async function loadArtikelList() {
   if (!grid) return;
 
   try {
-    const res = await fetch('/src/data/articles.json');
+    const res = await fetch('/data/articles.json');
     if (!res.ok) throw new Error('Gagal memuat artikel');
     const articles = await res.json();
 

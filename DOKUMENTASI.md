@@ -28,16 +28,18 @@ brew-and-co/
 ├── artikel-detail.html     # Template halaman detail artikel
 │
 ├── public/
-│   └── images/             # Semua file gambar
-│       ├── hero-bg.png
-│       ├── about-interior.jpg
-│       ├── coffee-001.jpg ... coffee-004.jpg
-│       ├── non-coffee-001.jpg ... non-coffee-003.jpg
-│       ├── food-001.jpg ... food-003.jpg
-│       ├── gallery-001.jpg ... gallery-008.jpg
-│       ├── sarah.jpg
-│       ├── priya.jpg
-│       └── yuki.jpg
+│   ├── images/             # Semua file gambar
+│   │   ├── hero-bg.png
+│   │   ├── about-interior.jpg
+│   │   ├── coffee-001.jpg ... coffee-004.jpg
+│   │   ├── non-coffee-001.jpg ... non-coffee-003.jpg
+│   │   ├── food-001.jpg ... food-003.jpg
+│   │   ├── gallery-001.jpg ... gallery-008.jpg
+│   │   ├── sarah.jpg
+│   │   ├── priya.jpg
+│   │   └── yuki.jpg
+│   └── data/
+│       └── articles.json   # ← EDIT INI untuk kelola artikel
 │
 ├── src/
 │   ├── css/
@@ -295,9 +297,11 @@ Hapus seluruh blok `<article>...</article>` yang sesuai dari `menu.html`.
 
 ## 6. Cara Menambah & Mengedit Artikel
 
-Semua konten artikel dikelola melalui satu file: **`src/data/articles.json`**
+Semua konten artikel dikelola melalui satu file: **`public/data/articles.json`**
 
 Tidak perlu menyentuh file HTML apapun — cukup edit JSON ini.
+
+> **Penting:** File yang aktif adalah `public/data/articles.json`. File `src/data/articles.json` sudah tidak digunakan dan bisa diabaikan.
 
 ---
 
@@ -348,7 +352,7 @@ Setiap artikel adalah satu object dalam array JSON:
 
 ### 6.2 Menambah Artikel Baru
 
-1. Buka `src/data/articles.json`
+1. Buka `public/data/articles.json`
 2. Tambahkan object baru di **awal array** (agar muncul paling atas di halaman):
 
 ```json
@@ -388,7 +392,7 @@ Setiap artikel adalah satu object dalam array JSON:
 
 ### 6.3 Mengedit Artikel yang Ada
 
-1. Buka `src/data/articles.json`
+1. Buka `public/data/articles.json`
 2. Cari object dengan `"id"` yang sesuai
 3. Edit field yang diinginkan (judul, ringkasan, konten, gambar, dll.)
 4. Simpan file
@@ -486,6 +490,45 @@ Cari tabel jam buka di section `id="location"` di `index.html`:
 ```
 
 Update juga di JSON-LD structured data di `<head>` untuk SEO.
+
+---
+
+### 7.4 Mengganti Embed Google Maps
+
+**Langkah 1 — Dapatkan URL embed baru:**
+1. Buka [maps.google.com](https://maps.google.com)
+2. Cari lokasi yang kamu inginkan
+3. Klik **Share** (ikon bagikan) → pilih tab **Embed a map**
+4. Klik **Copy HTML** — hasilnya berupa tag `<iframe src="https://www.google.com/maps/embed?pb=!1m18!...">`
+
+**Langkah 2 — Ganti di `index.html`:**
+
+Cari `<iframe>` di section `id="location"` dan **ganti hanya atribut `src`-nya**:
+
+```html
+<iframe
+  src="PASTE_URL_EMBED_BARU_DI_SINI"   ← ganti hanya bagian ini
+  width="100%"
+  height="400"
+  style="border:0;"
+  allowfullscreen=""
+  loading="lazy"
+  referrerpolicy="no-referrer-when-downgrade"
+  title="Brew &amp; Co location on Google Maps"
+></iframe>
+```
+
+**Langkah 3 — Update tombol Get Directions:**
+
+Tepat di bawah `</iframe>`, update link tombol:
+
+```html
+<a href="https://maps.google.com/?q=NAMA+LOKASI+BARU" ...>
+  Get Directions
+</a>
+```
+
+Ganti `NAMA+LOKASI+BARU` dengan nama lokasi (spasi diganti `+`), contoh: `Brew+%26+Co+Cafe+Bandung`.
 
 ---
 
