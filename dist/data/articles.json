@@ -1,5 +1,89 @@
 [
   {
+    "id": "tempat-alternatif-nyaman",
+    "kategori": "gaya-hidup",
+    "kategoriLabel": "Gaya Hidup",
+    "tanggal": "16 Mei 2026",
+    "gambar": "/images/coffee-001.jpg",
+    "gambarAlt": "Secangkir signature latte dengan latte art indah",
+    "judul": "Tempat Alternatif Nyaman untuk Semua Kalangan di Jambi",
+    "ringkasan": "Mencari cafe nyaman di Jambi sekarang sudah menjadi bagian dari gaya hidup banyak orang. Ada yang datang untuk mengerjakan tugas, meeting santai, nongkrong...",
+    "konten": [
+      {
+        "tipe": "paragraf",
+        "teks": "Mencari cafe nyaman di Jambi sekarang sudah menjadi bagian dari gaya hidup banyak orang. Ada yang datang untuk mengerjakan tugas, meeting santai, nongkrong bersama teman, hingga sekadar mencari tempat untuk recharge setelah aktivitas seharian. Di tengah banyaknya pilihan coffee shop Jambi, Bloom Coffee & Place hadir sebagai tempat alternatif dengan suasana yang nyaman untuk berbagai kalangan usia."
+      },
+      {
+        "tipe": "paragraf",
+        "teks": "Mengusung konsep open space dengan dominasi warna biru dan putih, Bloom menawarkan suasana yang tenang, santai, dan berbeda dari kebanyakan cafe lainnya. Tidak hanya cocok untuk anak muda, Bloom juga menjadi tempat yang nyaman bagi keluarga, pekerja, hingga anak-anak yang ingin menikmati suasana baru di Kota Jambi."
+      },
+      {
+        "tipe": "subjudul",
+        "teks": "Cafe Open Space Jambi dengan Suasana Cozy "
+      },
+      {
+        "tipe": "paragraf",
+        "teks": "Salah satu hal yang membuat Bloom menarik adalah konsep open space yang memberikan kesan lebih lega dan santai. Berbeda dengan cafe yang berada di dalam ruko atau ruang tertutup, Bloom menghadirkan suasana terbuka yang membuat pengunjung lebih nyaman menikmati waktu mereka. Tidak heran jika Bloom mulai dikenal sebagai salah satu cafe aesthetic Jambi dengan suasana cozy dan cocok untuk berbagai aktivitas. Mulai dari belajar, bekerja, nongkrong, hingga menikmati quality time bersama keluarga bisa dilakukan di tempat ini. Bagi mahasiswa dan pelajar, Bloom menjadi pilihan menarik karena suasananya mendukung untuk fokus mengerjakan tugas. Ditambah fasilitas seperti Wi-Fi dan area duduk yang nyaman, cafe ini cocok dijadikan tempat mencari inspirasi baru di luar rumah atau kampus. "
+      },
+      {
+        "tipe": "paragraf",
+        "teks": "Tidak heran jika Bloom mulai dikenal sebagai salah satu cafe aesthetic Jambi dengan suasana cozy dan cocok untuk berbagai aktivitas. Mulai dari belajar, bekerja, nongkrong, hingga menikmati quality time bersama keluarga bisa dilakukan di tempat ini."
+      },
+      {
+        "tipe": "paragraf",
+        "teks": "Bagi mahasiswa dan pelajar, Bloom menjadi pilihan menarik karena suasananya mendukung untuk fokus mengerjakan tugas. Ditambah fasilitas seperti Wi-Fi dan area duduk yang nyaman, cafe ini cocok dijadikan tempat mencari inspirasi baru di luar rumah atau kampus."
+      },
+      {
+        "tipe": "subjudul",
+        "teks": "Tempat Nongkrong Nyaman Jambi untuk Semua Usia "
+      },
+      {
+        "tipe": "paragraf",
+        "teks": "Bloom Coffee & Place tidak hanya berfokus pada anak muda sebagai target utama. Cafe ini juga ingin menghadirkan ruang yang nyaman bagi semua kalangan usia. Mulai dari anak-anak, orang tua, hingga komunitas bisa menikmati suasana yang santai dan terbuka. Hal ini terlihat dari rencana Bloom yang ingin menghadirkan berbagai kegiatan kreatif untuk anak-anak seperti lomba mewarnai, menggambar, hingga aktivitas komunitas lainnya. Konsep ini membuat Bloom bukan hanya sekadar tempat nongkrong, tetapi juga ruang berkumpul yang lebih inklusif. Dengan suasana yang ramah dan area yang cukup luas, pengunjung bisa menikmati waktu bersama tanpa merasa terlalu ramai atau sempit. Inilah yang membuat Bloom cocok disebut sebagai tempat nongkrong nyaman di Jambi dengan suasana yang lebih fleksibel untuk berbagai kebutuhan. "
+      },
+      {
+        "tipe": "paragraf",
+        "teks": "Hal ini terlihat dari rencana Bloom yang ingin menghadirkan berbagai kegiatan kreatif untuk anak-anak seperti lomba mewarnai, menggambar, hingga aktivitas komunitas lainnya. Konsep ini membuat Bloom bukan hanya sekadar tempat nongkrong, tetapi juga ruang berkumpul yang lebih inklusif."
+      },
+      {
+        "tipe": "paragraf",
+        "teks": "Dengan suasana yang ramah dan area yang cukup luas, pengunjung bisa menikmati waktu bersama tanpa merasa terlalu ramai atau sempit. Inilah yang membuat Bloom cocok disebut sebagai tempat nongkrong nyaman di Jambi dengan suasana yang lebih fleksibel untuk berbagai kebutuhan. "
+      },
+      {
+        "tipe": "subjudul",
+        "teks": "Bukan Sekadar Cafe, Tapi Ruang untuk Recharge"
+      },
+      {
+        "tipe": "paragraf",
+        "teks": "Di tengah aktivitas sehari-hari yang padat, banyak orang mulai mencari tempat yang bisa memberikan suasana lebih tenang dan nyaman. Bloom hadir sebagai tempat alternatif untuk recharge, baik secara pikiran maupun suasana hati. Konsep warna biru dan putih yang digunakan Bloom juga dipilih untuk memberikan kesan tenang dan bersih. Dipadukan dengan area open space dan suasana santai, pengunjung bisa menikmati ambience cafe yang terasa lebih fresh dan tidak membosankan. Karena itu, Bloom tidak hanya cocok untuk nongkrong, tetapi juga untuk bekerja santai, membaca buku, menikmati kopi, atau sekadar menikmati waktu sendiri. "
+      },
+      {
+        "tipe": "paragraf",
+        "teks": "Konsep warna biru dan putih yang digunakan Bloom juga dipilih untuk memberikan kesan tenang dan bersih. Dipadukan dengan area open space dan suasana santai, pengunjung bisa menikmati ambience cafe yang terasa lebih fresh dan tidak membosankan."
+      },
+      {
+        "tipe": "paragraf",
+        "teks": "Karena itu, Bloom tidak hanya cocok untuk nongkrong, tetapi juga untuk bekerja santai, membaca buku, menikmati kopi, atau sekadar menikmati waktu sendiri. "
+      },
+      {
+        "tipe": "subjudul",
+        "teks": "Bloom Coffee & Place Jadi Pilihan Cafe Cozy di Jambi "
+      },
+      {
+        "tipe": "paragraf",
+        "teks": "Di tengah persaingan cafe yang semakin berkembang, Bloom Coffee & Place mencoba hadir dengan identitas yang berbeda. Tidak hanya menjual makanan dan minuman, tetapi juga menghadirkan suasana yang nyaman bagi siapa saja yang datang. Dengan konsep open space, suasana aesthetic, dan lingkungan yang ramah untuk berbagai usia, Bloom berhasil menjadi salah satu cafe cozy Jambi yang cocok dijadikan tempat alternatif untuk berkumpul, belajar, maupun bersantai. Jadi, kalau kamu sedang mencari rekomendasi cafe Jambi dengan suasana nyaman dan cocok untuk semua kalangan, Bloom Coffee & Place bisa jadi tempat yang wajib masuk daftar kunjunganmu. "
+      },
+      {
+        "tipe": "paragraf",
+        "teks": "Dengan konsep open space, suasana aesthetic, dan lingkungan yang ramah untuk berbagai usia, Bloom berhasil menjadi salah satu cafe cozy Jambi yang cocok dijadikan tempat alternatif untuk berkumpul, belajar, maupun bersantai."
+      },
+      {
+        "tipe": "paragraf",
+        "teks": "Jadi, kalau kamu sedang mencari rekomendasi cafe Jambi dengan suasana nyaman dan cocok untuk semua kalangan, Bloom Coffee & Place bisa jadi tempat yang wajib masuk daftar kunjunganmu. "
+      }
+    ]
+  },
+  {
     "id": "espresso-latte-cappuccino",
     "kategori": "kopi",
     "kategoriLabel": "Kopi",
