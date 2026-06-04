@@ -51,7 +51,7 @@ html {
   }
 
   .btn-outline {
-    @apply border-2 border-white text-white px-8 py-3 rounded-full transition-colors duration-300 hover:bg-white hover:text-primary-dark focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2;
+    @apply border-2 border-white text-white px-8 py-3 rounded-full transition-colors duration-300 hover:bg-accent hover:border-accent hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2;
   }
 
   .menu-card {
