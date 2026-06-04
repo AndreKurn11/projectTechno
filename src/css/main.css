@@ -8,6 +8,7 @@ html {
   --color-primary-dark: #0A2E5E;
   --color-primary: #1565C0;
   --color-accent: #42A5F5;
+  --color-secondary:#0053BD;
   --font-display: 'Playfair Display', Georgia, serif;
   --font-body: 'Inter', system-ui, sans-serif;
 }
@@ -17,6 +18,7 @@ html {
   --color-primary:            #1565C0;
   --color-accent:             #42A5F5;
   --color-white:              #FFFFFF;
+  --color-secondary:          #0053BD;
   --color-overlay:            rgba(10, 46, 94, 0.60);
   --color-featured-overlay:   rgba(21, 101, 192, 0.20);
 }
@@ -42,6 +44,10 @@ html {
 @layer components {
   .btn-primary {
     @apply bg-primary text-white px-8 py-3 rounded-full transition-colors duration-300 hover:bg-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2;
+  }
+  
+  .btn-secondary {
+    @apply bg-secondary text-white px-8 py-3 rounded-full transition-colors duration-300 hover:bg-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2;
   }
 
   .btn-outline {

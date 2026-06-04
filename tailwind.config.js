@@ -7,6 +7,7 @@ export default {
         'primary-dark': '#0A2E5E',
         'primary':      '#1565C0',
         'accent':       '#42A5F5',
+        'secondary': '#0053BD',
       },
       fontFamily: {
         display: ['Playfair Display', 'Georgia', 'serif'],
