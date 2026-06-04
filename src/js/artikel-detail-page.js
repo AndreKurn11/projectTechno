@@ -39,12 +39,13 @@ async function loadArtikelDetail() {
     renderRelated(articles, artikel);
 
     // Update meta tags untuk SEO
-    document.title = `${artikel.judul} — Brew & Co`;
+    document.title = `${artikel.judul} — Bloom Coffee & Place`;
     setMeta('description', artikel.ringkasan);
+    setMeta('keywords', generateKeywords(artikel));
     setOG('og:title', artikel.judul);
     setOG('og:description', artikel.ringkasan);
-    setOG('og:image', `https://brewandco.id${artikel.gambar}`);
-    setOG('og:url', `https://brewandco.id/artikel-detail.html?id=${artikel.id}`);
+    setOG('og:image', `https://bloomcafe.id${artikel.gambar}`);
+    setOG('og:url', `https://bloomcafe.id/artikel-detail.html?id=${artikel.id}`);
 
     // Tampilkan konten
     loadingEl.classList.add('hidden');
@@ -108,6 +109,21 @@ function renderRelated(articles, current) {
 function showError(loadingEl, errorEl) {
   loadingEl.classList.add('hidden');
   errorEl.classList.remove('hidden');
+}
+
+function generateKeywords(artikel) {
+  // Gunakan keywords dari JSON jika ada, atau auto-generate
+  if (artikel.keywords) return artikel.keywords;
+
+  const base = 'Bloom Coffee & Place, cafe Jambi, coffee shop Jambi, kopi Jambi';
+  const kategoriMap = {
+    'kopi':       'kopi, espresso, latte, cafe',
+    'brewing':    'brewing guide, cara membuat kopi, tips kopi',
+    'gaya-hidup': 'gaya hidup, cafe lifestyle, remote working',
+  };
+  const kategoriKeywords = kategoriMap[artikel.kategori] || artikel.kategoriLabel;
+
+  return `${artikel.judul}, ${kategoriKeywords}, ${base}`;
 }
 
 function setMeta(name, content) {
