@@ -7,11 +7,26 @@ export function initNav() {
 
   // Sticky nav: toggle 'is-sticky' class when scrolled past hero height
   // Pages with 'nav-dark' class keep dark background at all times (no toggle)
+  const waBtn = document.getElementById('wa-btn');
+
   function updateSticky() {
     if (header.classList.contains('nav-dark')) return;
     const hero = document.getElementById('hero');
     const threshold = hero ? hero.offsetHeight : 80;
-    header.classList.toggle('is-sticky', window.scrollY > threshold);
+    const isScrolled = window.scrollY > threshold;
+
+    header.classList.toggle('is-sticky', isScrolled);
+
+    // WA button: transparan di atas, hijau saat scrolled
+    if (waBtn) {
+      if (isScrolled) {
+        waBtn.classList.remove('bg-transparent', 'border-transparent');
+        waBtn.classList.add('bg-[#25D366]', 'hover:bg-[#1ebe5a]', 'border-[#25D366]');
+      } else {
+        waBtn.classList.add('bg-transparent', 'border-transparent');
+        waBtn.classList.remove('bg-[#25D366]', 'hover:bg-[#1ebe5a]', 'border-[#25D366]');
+      }
+    }
   }
 
   // Run on load to set correct initial state
